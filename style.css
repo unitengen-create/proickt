@@ -1149,12 +1149,6 @@ textarea {
   margin-bottom: 40px;
 }
 
-.faq-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .faq-item {
   border: 1px solid #222;
   margin-bottom: 15px;
