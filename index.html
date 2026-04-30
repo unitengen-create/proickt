@@ -11,7 +11,7 @@
       <div class="container">
         <div class="nav__wrapper">
           <div class="logo">
-            <a href="/"><img src="./img/Logo (6).svg" alt="" /></a>
+            <a href="/index.html"><img src="./img/Logo (6).svg" alt="" /></a>
           </div>
           <nav class="nav-links">
             <a href="./index.html">Home</a>
@@ -19,11 +19,28 @@
             <a href="./works.html">Work</a>
             <a href="./process.html">Process</a>
             <a href="./about.html">About</a>
-            <a href="#">Careers</a>
+            <a href="./careers.html">Careers</a>
             <button class="btn-primary mobile-btn">Contact</button>
           </nav>
           <button class="btn-primary desktop-btn">Contact Us</button>
-          <img class="hamburger" src="./img/Icon.svg" alt="" />
+          <div class="u-menu">
+            <button class="u-menu__btn" id="uMenuBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="u-menu__panel" id="uMenuPanel">
+              <ul class="u-menu__list">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./services.html"><li>Services</li></a>
+                <a href="./works.html"><li>Works</li></a>
+                <a href="./process.html"><li>Process</li></a>
+                <a href="./about.html"><li>About</li></a>
+                <a href="./careers.html"><li>Careers</li></a>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -537,23 +554,92 @@
             </div>
           </div>
           <div class="checkbox-wrapper-33">
-            <label class="checkbox">
-              <input class="checkbox__trigger visuallyhidden" type="checkbox" />
-              <span class="checkbox__symbol">
-                <svg
-                  aria-hidden="true"
-                  class="icon-checkbox"
-                  width="28px"
-                  height="28px"
-                  viewBox="0 0 28 28"
-                  version="1"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 14l8 7L24 7"></path>
-                </svg>
-              </span>
-              <p class="checkbox__textwrapper">Checkbox</p>
-            </label>
+            <div class="chickbox__cards">
+              <div class="chickbox__card">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__trigger visuallyhidden"
+                    type="checkbox"
+                  />
+                  <span class="checkbox__symbol">
+                    <svg
+                      aria-hidden="true"
+                      class="icon-checkbox"
+                      width="28px"
+                      height="28px"
+                      viewBox="0 0 28 28"
+                      version="1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 14l8 7L24 7"></path>
+                    </svg>
+                  </span>
+                  <p class="checkbox__textwrapper">Web Design</p>
+                </label>
+                <label class="checkbox">
+                  <input
+                    class="checkbox__trigger visuallyhidden"
+                    type="checkbox"
+                  />
+                  <span class="checkbox__symbol">
+                    <svg
+                      aria-hidden="true"
+                      class="icon-checkbox"
+                      width="28px"
+                      height="28px"
+                      viewBox="0 0 28 28"
+                      version="1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 14l8 7L24 7"></path>
+                    </svg>
+                  </span>
+                  <p class="checkbox__textwrapper">Mobile App Design</p>
+                </label>
+              </div>
+              <div class="chickbox__card">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__trigger visuallyhidden"
+                    type="checkbox"
+                  />
+                  <span class="checkbox__symbol">
+                    <svg
+                      aria-hidden="true"
+                      class="icon-checkbox"
+                      width="28px"
+                      height="28px"
+                      viewBox="0 0 28 28"
+                      version="1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 14l8 7L24 7"></path>
+                    </svg>
+                  </span>
+                  <p class="checkbox__textwrapper">Collaboration</p>
+                </label>
+                <label class="checkbox">
+                  <input
+                    class="checkbox__trigger visuallyhidden"
+                    type="checkbox"
+                  />
+                  <span class="checkbox__symbol">
+                    <svg
+                      aria-hidden="true"
+                      class="icon-checkbox"
+                      width="28px"
+                      height="28px"
+                      viewBox="0 0 28 28"
+                      version="1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M4 14l8 7L24 7"></path>
+                    </svg>
+                  </span>
+                  <p class="checkbox__textwrapper">Others</p>
+                </label>
+              </div>
+            </div>
           </div>
           <div class="box" data-anim>
             <label>Your Budget</label>
@@ -627,5 +713,15 @@
         });
       </script>
     </main>
+
+    <script>
+      const btn = document.getElementById("uMenuBtn");
+      const panel = document.getElementById("uMenuPanel");
+
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        panel.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
